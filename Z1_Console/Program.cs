@@ -31,7 +31,7 @@ namespace Z1_Console
 
             if (Math.Abs(x0) < y0 && x0 < 0 && x0 > -23 && y0 < 23 && y0 > 0)
                 Console.WriteLine("Точка находится внутри");
-            else if (x0 > y0 || y0 < 0 || y0 > 23)
+            else if (Math.Abs(x0) > y0 || y0 < 0 || y0 > 23 || x0 > 0 || x0 < -23)
                 Console.WriteLine("Точка находится снаружи");
             else
                 Console.WriteLine("Точка находится на границе");

@@ -19,30 +19,28 @@ namespace Z3_Forms
 
         private void ShowButton_Click(object sender, EventArgs e)
         {
-            string[] strs = NumbersTextBox.Text.Split(' ');
+            List<int> numbers = new List<int>();
+
+            int A = -999, B = 999;
+
+            for (int i = A; i <= B; i++)
+            {
+                if (Math.Abs(i).ToString().Length != 3) continue;
+                numbers.Add(i);
+            }
+
             string result = string.Empty;
 
-            foreach(string str in strs)
+            foreach(int num in numbers)
             {
-                int number = 0;
-
-                try
-                {
-                    number = int.Parse(str);
-                }
-                catch
-                {
-                    continue;
-                }
-
-                int abs_number = Math.Abs(number);
+                int abs_number = Math.Abs(num);
 
                 int first = abs_number / 100;
                 int second = abs_number % 100 / 10;
                 int third = abs_number % 100 % 10;
 
                 if (first == second || second == third || third == first)
-                    result += str + " ";
+                    result += num + " ";
             }
 
             MessageBox.Show($"Трехзначные числа, в которых хотя бы две цифры повторяются: {result}", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);

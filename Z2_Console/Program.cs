@@ -58,11 +58,7 @@ namespace Z2_Console
                     Console.WriteLine("Фигура прямоугольник успешно выбрана!");
                     double square_side1 = 0.0;
                     double square_side2 = 0.0;
-                    double square_side3 = 0.0;
-                    double square_side4 = 0.0;
 
-                    double square_height = 0.0;
-                    double square_width = 0.0;
                     while (true)
                     {
                         try
@@ -73,23 +69,8 @@ namespace Z2_Console
                             Console.Write("Введите величину второй стороны прямоугольника для расчета периметра: ");
                             square_side2 = double.Parse(Console.ReadLine());
 
-                            Console.Write("Введите величину третьей стороны прямоугольника для расчета периметра: ");
-                            square_side3 = double.Parse(Console.ReadLine());
-
-                            Console.Write("Введите величину четвертой стороны прямоугольника для расчета периметра: ");
-                            square_side4 = double.Parse(Console.ReadLine());
-
-                            Console.Write("Введите высоту прямоугольника для расчета площади: ");
-                            square_height = double.Parse(Console.ReadLine());
-
-                            Console.Write("Введите ширину прямоугольника для расчета площади: ");
-                            square_width = double.Parse(Console.ReadLine());
-
-                            if (square_side1 <= 0 || square_side2 <= 0 || square_side3 <= 0 || square_side4 <= 0)
+                            if (square_side1 <= 0 || square_side2 <= 0)
                                 throw new Exception("Стороны прямоугольника не могут быть меньше или равны нулю!");
-
-                            if (square_width <= 0 || square_height <= 0)
-                                throw new Exception("Высота или ширина прямоугольника не могут быть меньше или равны нулю!");
                             break;
                         }
                         catch (Exception ex)
@@ -98,7 +79,7 @@ namespace Z2_Console
                         }
                     }
 
-                    Console.WriteLine($"Периметр прямоугольника равен: {square_side1 + square_side2 + square_side3 + square_side4}, площадь прямоугольника равна: {square_height * square_width}");
+                    Console.WriteLine($"Периметр прямоугольника равен: {square_side1 * 2 + square_side2 * 2}, площадь прямоугольника равна: {square_side1 * square_side2}");
                     break;
                 case "т":
                     Console.WriteLine("Фигура треугольник успешно выбрана!");

@@ -41,26 +41,14 @@ namespace Z2_Forms
         {
             double side1 = 0.0;
             double side2 = 0.0;
-            double side3 = 0.0;
-            double side4 = 0.0;
-
-            double w = 0.0, h = 0.0;
 
             try
             {
                 side1 = double.Parse(SquareFirstTextBox.Text);
                 side2 = double.Parse(SquareSecondTextBox.Text);
-                side3 = double.Parse(SquareThirdTextBox.Text);
-                side4 = double.Parse(SquareFourthTextBox.Text);
 
-                w = double.Parse(SquareWidthTextBox.Text);
-                h = double.Parse(SquateHeightTextBox.Text);
-
-                if (side1 <= 0 || side2 <= 0 || side3 <= 0 || side4 <= 0)
+                if (side1 <= 0 || side2 <= 0)
                     throw new Exception("Стороны прямоугольника не могут быть меньше или равны нулю!");
-
-                if (w <= 0 || h <= 0)
-                    throw new Exception("Длина или ширина прямоугольника не могут быть меньше или равны нулю!");
             }
             catch (Exception ex)
             {
@@ -68,7 +56,7 @@ namespace Z2_Forms
                 return;
             }
 
-            MessageBox.Show($"Периметр прямоугольника равен: {side1 + side2 + side3 + side4}, площадь треугольника равна: {h * w}", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Периметр прямоугольника равен: {side1 * 2 + side2 * 2}, площадь прямоугольника равна: {side1 * side2}", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 

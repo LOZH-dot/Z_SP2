@@ -30,47 +30,39 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.RoundRadiusTextBox = new System.Windows.Forms.TextBox();
             this.CalculateRoundButton = new System.Windows.Forms.Button();
+            this.RoundRadiusTextBox = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.CalculateSquareButton = new System.Windows.Forms.Button();
+            this.SquareSecondTextBox = new System.Windows.Forms.TextBox();
+            this.SquareFirstTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.CalculateTriangleButton = new System.Windows.Forms.Button();
+            this.TriangleHeightTextBox = new System.Windows.Forms.TextBox();
+            this.TriangleCoreSideTextBox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.TriangleThirdTextBox = new System.Windows.Forms.TextBox();
+            this.TriangleSecondTextBox = new System.Windows.Forms.TextBox();
+            this.TriangleFirstTextBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.SquareFirstTextBox = new System.Windows.Forms.TextBox();
-            this.SquareSecondTextBox = new System.Windows.Forms.TextBox();
-            this.SquareThirdTextBox = new System.Windows.Forms.TextBox();
-            this.SquareFourthTextBox = new System.Windows.Forms.TextBox();
-            this.SquateHeightTextBox = new System.Windows.Forms.TextBox();
-            this.SquareWidthTextBox = new System.Windows.Forms.TextBox();
-            this.CalculateSquareButton = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.TriangleFirstTextBox = new System.Windows.Forms.TextBox();
-            this.TriangleSecondTextBox = new System.Windows.Forms.TextBox();
-            this.TriangleThirdTextBox = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.TriangleCoreSideTextBox = new System.Windows.Forms.TextBox();
-            this.TriangleHeightTextBox = new System.Windows.Forms.TextBox();
-            this.CalculateTriangleButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,19 +92,56 @@
             this.tabPage1.Text = "Круг";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // CalculateRoundButton
+            // 
+            this.CalculateRoundButton.Location = new System.Drawing.Point(11, 83);
+            this.CalculateRoundButton.Name = "CalculateRoundButton";
+            this.CalculateRoundButton.Size = new System.Drawing.Size(88, 29);
+            this.CalculateRoundButton.TabIndex = 4;
+            this.CalculateRoundButton.Text = "Вычислить";
+            this.CalculateRoundButton.UseVisualStyleBackColor = true;
+            this.CalculateRoundButton.Click += new System.EventHandler(this.CalculateRoundButton_Click);
+            // 
+            // RoundRadiusTextBox
+            // 
+            this.RoundRadiusTextBox.Location = new System.Drawing.Point(135, 40);
+            this.RoundRadiusTextBox.Name = "RoundRadiusTextBox";
+            this.RoundRadiusTextBox.Size = new System.Drawing.Size(100, 20);
+            this.RoundRadiusTextBox.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(427, 24);
+            this.panel1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(427, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Расчет периметра и площади круга";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Введите радиус круга:";
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.CalculateSquareButton);
-            this.tabPage2.Controls.Add(this.SquareWidthTextBox);
-            this.tabPage2.Controls.Add(this.SquateHeightTextBox);
-            this.tabPage2.Controls.Add(this.SquareFourthTextBox);
-            this.tabPage2.Controls.Add(this.SquareThirdTextBox);
             this.tabPage2.Controls.Add(this.SquareSecondTextBox);
             this.tabPage2.Controls.Add(this.SquareFirstTextBox);
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.panel2);
@@ -123,6 +152,67 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Прямоугольник";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // CalculateSquareButton
+            // 
+            this.CalculateSquareButton.Location = new System.Drawing.Point(155, 117);
+            this.CalculateSquareButton.Name = "CalculateSquareButton";
+            this.CalculateSquareButton.Size = new System.Drawing.Size(98, 32);
+            this.CalculateSquareButton.TabIndex = 16;
+            this.CalculateSquareButton.Text = "Вычислить";
+            this.CalculateSquareButton.UseVisualStyleBackColor = true;
+            this.CalculateSquareButton.Click += new System.EventHandler(this.CalculateSquareButton_Click);
+            // 
+            // SquareSecondTextBox
+            // 
+            this.SquareSecondTextBox.Location = new System.Drawing.Point(208, 74);
+            this.SquareSecondTextBox.Name = "SquareSecondTextBox";
+            this.SquareSecondTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SquareSecondTextBox.TabIndex = 11;
+            // 
+            // SquareFirstTextBox
+            // 
+            this.SquareFirstTextBox.Location = new System.Drawing.Point(208, 48);
+            this.SquareFirstTextBox.Name = "SquareFirstTextBox";
+            this.SquareFirstTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SquareFirstTextBox.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 77);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Введите вторую сторону:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(135, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Введите первую сторону:";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(427, 24);
+            this.panel2.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(427, 24);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Расчет периметра и площади прямоугольника";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage3
             // 
@@ -145,69 +235,95 @@
             this.tabPage3.Text = "Треугольник";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // CalculateTriangleButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Введите радиус круга:";
+            this.CalculateTriangleButton.Location = new System.Drawing.Point(12, 235);
+            this.CalculateTriangleButton.Name = "CalculateTriangleButton";
+            this.CalculateTriangleButton.Size = new System.Drawing.Size(90, 34);
+            this.CalculateTriangleButton.TabIndex = 15;
+            this.CalculateTriangleButton.Text = "Вычислить";
+            this.CalculateTriangleButton.UseVisualStyleBackColor = true;
+            this.CalculateTriangleButton.Click += new System.EventHandler(this.CalculateTriangleButton_Click);
             // 
-            // label2
+            // TriangleHeightTextBox
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(427, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Расчет периметра и площади круга";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TriangleHeightTextBox.Location = new System.Drawing.Point(173, 181);
+            this.TriangleHeightTextBox.Name = "TriangleHeightTextBox";
+            this.TriangleHeightTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TriangleHeightTextBox.TabIndex = 14;
             // 
-            // panel1
+            // TriangleCoreSideTextBox
             // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(427, 24);
-            this.panel1.TabIndex = 2;
+            this.TriangleCoreSideTextBox.Location = new System.Drawing.Point(173, 155);
+            this.TriangleCoreSideTextBox.Name = "TriangleCoreSideTextBox";
+            this.TriangleCoreSideTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TriangleCoreSideTextBox.TabIndex = 13;
             // 
-            // RoundRadiusTextBox
+            // label15
             // 
-            this.RoundRadiusTextBox.Location = new System.Drawing.Point(135, 40);
-            this.RoundRadiusTextBox.Name = "RoundRadiusTextBox";
-            this.RoundRadiusTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RoundRadiusTextBox.TabIndex = 3;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(76, 184);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(91, 13);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Введите высоту:";
             // 
-            // CalculateRoundButton
+            // label14
             // 
-            this.CalculateRoundButton.Location = new System.Drawing.Point(11, 83);
-            this.CalculateRoundButton.Name = "CalculateRoundButton";
-            this.CalculateRoundButton.Size = new System.Drawing.Size(88, 29);
-            this.CalculateRoundButton.TabIndex = 4;
-            this.CalculateRoundButton.Text = "Вычислить";
-            this.CalculateRoundButton.UseVisualStyleBackColor = true;
-            this.CalculateRoundButton.Click += new System.EventHandler(this.CalculateRoundButton_Click);
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 158);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(158, 13);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Введите величину основания:";
             // 
-            // panel2
+            // TriangleThirdTextBox
             // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(427, 24);
-            this.panel2.TabIndex = 3;
+            this.TriangleThirdTextBox.Location = new System.Drawing.Point(149, 106);
+            this.TriangleThirdTextBox.Name = "TriangleThirdTextBox";
+            this.TriangleThirdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TriangleThirdTextBox.TabIndex = 10;
             // 
-            // label3
+            // TriangleSecondTextBox
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(427, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Расчет периметра и площади прямоугольника";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TriangleSecondTextBox.Location = new System.Drawing.Point(149, 77);
+            this.TriangleSecondTextBox.Name = "TriangleSecondTextBox";
+            this.TriangleSecondTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TriangleSecondTextBox.TabIndex = 9;
+            // 
+            // TriangleFirstTextBox
+            // 
+            this.TriangleFirstTextBox.Location = new System.Drawing.Point(149, 46);
+            this.TriangleFirstTextBox.Name = "TriangleFirstTextBox";
+            this.TriangleFirstTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TriangleFirstTextBox.TabIndex = 8;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(8, 109);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(134, 13);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Введите третью сторону:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(8, 80);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(134, 13);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Введите вторую сторону:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(8, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(135, 13);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Введите первую сторону:";
             // 
             // panel3
             // 
@@ -228,202 +344,6 @@
             this.label4.Text = "Расчет периметра и площади треугольника";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Введите первую сторону:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 77);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Введите вторую сторону:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 106);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(134, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Введите третью сторону:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 132);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Введите четвертую сторону:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 173);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(171, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Введите длину прямоугольника:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 203);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(179, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Введите ширину прямоугольника:";
-            // 
-            // SquareFirstTextBox
-            // 
-            this.SquareFirstTextBox.Location = new System.Drawing.Point(208, 48);
-            this.SquareFirstTextBox.Name = "SquareFirstTextBox";
-            this.SquareFirstTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SquareFirstTextBox.TabIndex = 10;
-            // 
-            // SquareSecondTextBox
-            // 
-            this.SquareSecondTextBox.Location = new System.Drawing.Point(208, 74);
-            this.SquareSecondTextBox.Name = "SquareSecondTextBox";
-            this.SquareSecondTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SquareSecondTextBox.TabIndex = 11;
-            // 
-            // SquareThirdTextBox
-            // 
-            this.SquareThirdTextBox.Location = new System.Drawing.Point(208, 103);
-            this.SquareThirdTextBox.Name = "SquareThirdTextBox";
-            this.SquareThirdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SquareThirdTextBox.TabIndex = 12;
-            // 
-            // SquareFourthTextBox
-            // 
-            this.SquareFourthTextBox.Location = new System.Drawing.Point(208, 129);
-            this.SquareFourthTextBox.Name = "SquareFourthTextBox";
-            this.SquareFourthTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SquareFourthTextBox.TabIndex = 13;
-            // 
-            // SquateHeightTextBox
-            // 
-            this.SquateHeightTextBox.Location = new System.Drawing.Point(208, 170);
-            this.SquateHeightTextBox.Name = "SquateHeightTextBox";
-            this.SquateHeightTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SquateHeightTextBox.TabIndex = 14;
-            // 
-            // SquareWidthTextBox
-            // 
-            this.SquareWidthTextBox.Location = new System.Drawing.Point(208, 200);
-            this.SquareWidthTextBox.Name = "SquareWidthTextBox";
-            this.SquareWidthTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SquareWidthTextBox.TabIndex = 15;
-            // 
-            // CalculateSquareButton
-            // 
-            this.CalculateSquareButton.Location = new System.Drawing.Point(11, 239);
-            this.CalculateSquareButton.Name = "CalculateSquareButton";
-            this.CalculateSquareButton.Size = new System.Drawing.Size(98, 32);
-            this.CalculateSquareButton.TabIndex = 16;
-            this.CalculateSquareButton.Text = "Вычислить";
-            this.CalculateSquareButton.UseVisualStyleBackColor = true;
-            this.CalculateSquareButton.Click += new System.EventHandler(this.CalculateSquareButton_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(8, 49);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(135, 13);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Введите первую сторону:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(8, 80);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 13);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Введите вторую сторону:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(8, 109);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(134, 13);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Введите третью сторону:";
-            // 
-            // TriangleFirstTextBox
-            // 
-            this.TriangleFirstTextBox.Location = new System.Drawing.Point(149, 46);
-            this.TriangleFirstTextBox.Name = "TriangleFirstTextBox";
-            this.TriangleFirstTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TriangleFirstTextBox.TabIndex = 8;
-            // 
-            // TriangleSecondTextBox
-            // 
-            this.TriangleSecondTextBox.Location = new System.Drawing.Point(149, 77);
-            this.TriangleSecondTextBox.Name = "TriangleSecondTextBox";
-            this.TriangleSecondTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TriangleSecondTextBox.TabIndex = 9;
-            // 
-            // TriangleThirdTextBox
-            // 
-            this.TriangleThirdTextBox.Location = new System.Drawing.Point(149, 106);
-            this.TriangleThirdTextBox.Name = "TriangleThirdTextBox";
-            this.TriangleThirdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TriangleThirdTextBox.TabIndex = 10;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(9, 158);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(158, 13);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "Введите величину основания:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(76, 184);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(91, 13);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Введите высоту:";
-            // 
-            // TriangleCoreSideTextBox
-            // 
-            this.TriangleCoreSideTextBox.Location = new System.Drawing.Point(173, 155);
-            this.TriangleCoreSideTextBox.Name = "TriangleCoreSideTextBox";
-            this.TriangleCoreSideTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TriangleCoreSideTextBox.TabIndex = 13;
-            // 
-            // TriangleHeightTextBox
-            // 
-            this.TriangleHeightTextBox.Location = new System.Drawing.Point(173, 181);
-            this.TriangleHeightTextBox.Name = "TriangleHeightTextBox";
-            this.TriangleHeightTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TriangleHeightTextBox.TabIndex = 14;
-            // 
-            // CalculateTriangleButton
-            // 
-            this.CalculateTriangleButton.Location = new System.Drawing.Point(12, 235);
-            this.CalculateTriangleButton.Name = "CalculateTriangleButton";
-            this.CalculateTriangleButton.Size = new System.Drawing.Size(90, 34);
-            this.CalculateTriangleButton.TabIndex = 15;
-            this.CalculateTriangleButton.Text = "Вычислить";
-            this.CalculateTriangleButton.UseVisualStyleBackColor = true;
-            this.CalculateTriangleButton.Click += new System.EventHandler(this.CalculateTriangleButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,12 +357,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -464,16 +384,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button CalculateSquareButton;
-        private System.Windows.Forms.TextBox SquareWidthTextBox;
-        private System.Windows.Forms.TextBox SquateHeightTextBox;
-        private System.Windows.Forms.TextBox SquareFourthTextBox;
-        private System.Windows.Forms.TextBox SquareThirdTextBox;
         private System.Windows.Forms.TextBox SquareSecondTextBox;
         private System.Windows.Forms.TextBox SquareFirstTextBox;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox TriangleHeightTextBox;

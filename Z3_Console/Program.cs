@@ -12,21 +12,12 @@ namespace Z3_Console
         {
             List<int> numbers = new List<int>();
 
-            Console.WriteLine("Введите числа или введите 0, чтобы остановить ввод: ");
-            while (true)
+            int A = -999, B = 999;
+
+            for (int i = A; i <= B; i++)
             {
-                try
-                {
-                    int number = int.Parse(Console.ReadLine());
-
-                    if (number == 0) break;
-
-                    numbers.Add(number);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Ошибка: {ex.Message}");
-                }
+                if (Math.Abs(i).ToString().Length != 3) continue;
+                numbers.Add(i);
             }
 
 

@@ -35,7 +35,7 @@ namespace Z1_Forms
 
             if (Math.Abs(x0) < y0 && x0 < 0 && x0 > -23 && y0 < 23 && y0 > 0)
                 MessageBox.Show("Точка находится внутри", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else if (x0 > y0 || y0 < 0 || y0 > 23)
+            else if (Math.Abs(x0) > y0 || y0 < 0 || y0 > 23 || x0 > 0 || x0 < -23)
                 MessageBox.Show("Точка находится снаружи", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("Точка находится на границе", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
